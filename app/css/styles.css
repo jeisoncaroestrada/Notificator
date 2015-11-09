@@ -1,0 +1,215 @@
+/*@media (max-width: 480px) {
+
+  h1{
+    Font-size: 150px;
+    color: red;
+  }
+ }
+
+@media (min-width: 480px) {
+
+  h1{
+    Font-size: 150px;
+    color: green;
+  }
+
+  p{
+
+  	color: blue!important;
+
+  }
+ }
+
+@media (min-width: 600px) {
+
+  
+
+  p{
+
+  	color: pink;
+
+  }
+ }
+*/
+/*largo 25% del total del contenedor*/
+ /*section{
+	width: 100%;
+}
+
+.wid-25{
+	width: calc(25% - 40px);
+	background: blue;
+	float: left;
+	padding: 10px;
+	margin: 10px;
+
+
+}
+
+ */
+
+ @media (max-width: 480px) {
+
+  .fs-xs-20{
+    font-size: 20px!important;
+  }
+  .fs-xs-19{
+    font-size: 19px!important;
+  }
+  .fs-xs-10{
+    font-size: 10px!important;
+  }
+ }
+
+  
+
+/*/*****************************************************************************
+// clases Útiles
+// *****************************************************************************/
+
+.center-items{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.overflow-hidden{
+
+  overflow: hidden;
+}
+
+.padding-t-b-50{
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.line-height-small{
+  line-height: 25px;
+}
+
+
+/*/*****************************************************************************
+// Elementos principales
+// *****************************************************************************/
+.overlay-header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.7;
+  overflow: hidden;
+}
+
+.container-header{
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 100px 200px 100px 200px;
+}
+
+.img-background{
+  width: 1500px;
+  height: auto;
+}
+
+#header-landing{
+
+  height: 700px;
+  background: url(../img/pic2.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.container-padding-medium{
+   padding: 100px 200px 100px 200px;
+}
+
+@media (max-width: 768px) {
+
+  .container-padding-medium{
+     padding: 100px 50px 100px 50px;
+  }
+}
+
+
+
+
+
+/*/*****************************************************************************
+// Responsive @media
+// *****************************************************************************/
+
+@media (max-width: 992px) {
+
+  .container-header{
+    padding: 100px 100px 100px 100px;
+  }
+
+  .img-background{
+    margin: -200px
+  }
+  
+}
+
+@media (max-width: 768px) {
+
+  .img-background{
+    margin-left: -350px;
+
+  }
+
+  .fs-sm-40{
+
+    font-size: 40px!important;
+  }
+  
+}
+
+@media (max-width: 480px) {
+
+  .container-header{
+    padding: 50px;
+  }
+
+  .fs-xs-30{
+
+    font-size: 30px!important;
+  }
+
+  .img-background{
+   margin-left: -450px;
+  }
+  
+}
+
+/*/*****************************************************************************
+// Tamaños
+// *****************************************************************************/
+.wid-100-{
+  width: 100%;
+}
+
+.fs-50{
+  font-size: 50px;
+}
+
+
+/*/*****************************************************************************
+// Colores
+// *****************************************************************************/
+.fc-W{
+
+  color: #fff;
+}
+
+.bg-silver{
+  background: silver;
+}

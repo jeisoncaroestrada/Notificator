@@ -1,0 +1,98 @@
+@import "bourbon/bourbon.scss";
+
+	// *****************************************************************************
+	// variables
+	// *****************************************************************************
+	$screen-xs-min: 480px;
+	$screen-sm-min: 768px;
+	$screen-md-min: 992px;
+
+
+
+	// *****************************************************************************
+	// fontface
+	// *****************************************************************************
+	
+	@font-face {
+		font-family: 'Trebuchet MS';
+		font-style: normal;
+		font-weight: normal;
+		src: local('Trebuchet MS'), url('../fonts/trebuc.woff') format('woff');
+	}
+
+	
+	// *****************************************************************************
+	// @media quertys
+	// *****************************************************************************
+	@media(max-width: $screen-xs-min){
+
+
+	};
+
+	@media(max-width: $screen-sm-min){
+
+		
+	};
+
+	@media(max-width: $screen-md-min){
+
+		
+	};
+
+	// *****************************************************************************
+	// Main- responsive
+	// *****************************************************************************
+
+	html{
+
+		font-family: 'Trebuchet MS', sans-serif !important;
+		line-height: 0;
+
+		@media(min-width: 1500px){ 
+			background-color:#fff;
+		}
+	}
+
+	.form-signin {
+	    max-width: 330px;
+	    padding: 15px;
+	    margin: 0 auto;
+	}
+
+	// *****************************************************************************
+	// Animations
+	// *****************************************************************************
+	@include keyframes(hearthbeat) {
+		from {
+			@include transform(scale(1));
+		}
+		0%{ @include transform(scale(1.2))}
+		50%{ @include transform(scale(0.8))}
+		50%{ @include transform(scale(1))}
+		to {
+			@include transform(scale(1.4));
+		}
+	}
+
+	@include keyframes(fadeIn) {
+		0% { opacity: 0; }
+		100% { opacity: 1; }
+	}
+
+	@include keyframes(fadeOut) {
+		0% { opacity: 1; }
+		100% { opacity: 0; }
+	}
+
+
+	.hearth-beat{
+		@include animation(hearthbeat 1.0s infinite linear);
+	}
+
+	.fade_in_easy{
+		@include animation(fadeIn 0.3s ease-in);
+	}
+
+	.fade_out_easy{
+		@include animation(fadeOut 0.3s ease-in);
+	}
