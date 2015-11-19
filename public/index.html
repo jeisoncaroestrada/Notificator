@@ -13,18 +13,18 @@
 <body>
   <!-- inicio del header -->
 	<header id="header-landing" class="overflow-hidden">
-   <!--  <img class="img-background" src="img/pic2.jpg" alt="imagen de fondo"> -->
+    <!-- <img class="img-background" src="img/pic2.jpg" alt="imagen de fondo"> -->
     <div class="overlay-header"></div>
     <div class="container-header">
       <div class="wid-100 center-items">
-        <div class="col-xs-12 col-sm-12 col-md-8">
+        <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8">
           <h1 class="fc-W text-center fs-50 fs-xs-30 fs-sm-40" >
             Esta es la aplicacion para obtener notificaciones importantes
           </h1>
         </div>
       </div>
       <div class="wid-100 center-items padding-t-b-50">
-        <div class="col-xs-10">
+        <div class="wid-100 col-sm-12 col-md-10 col-lg-6">
           <h4 class="fc-W text-center line-height-small">Con <span class="label label-success">Notificator</span> nunca te perderas de ningun suceso importante, puedes escoger por que medio te notifiquen primero y luego continuen hasta que te llegue la informacion.</h4>
         </div>
       </div>
@@ -102,8 +102,96 @@
       </div>
     </div>
   </section>
-  <footer>
+  <section >
+    <div class="container-padding-medium bg-image-contact">
+      <div class="overlay-header bg-gradient-blue"></div>
+        <div class="row">
+        <!-- Informacion de contacto -->
+          <div class="col-xs-12 col-sm-6">
+            <div class="wid-100">
+              <h3>Detalles de contacto </h3>
+              <p>
+                  Semillero de Desarollo Web<br>Funlam Transversal 51 #28 - 90<br>Medellín, Antioquia Colombia
+              </p>
+              <p>
+                <i class="fa fa-phone"></i> 
+                <span class="glyphicon glyphicon-phone"></span><abbr title="Phone"> Telefono</abbr>: +57 301 356 61 26</p>
+              <p>
+                <i class="fa fa-envelope-o"></i> 
+                <span class="glyphicon glyphicon-envelope"></span><abbr title="Email"> E-mail</abbr>: <a class="fc-W">sedeweb@funlam.edu.co</a>
+              </p>
+              <p>
+                <i class="fa fa-clock-o"></i> 
+                <span class="glyphicon glyphicon-time"></span><abbr title="Hours"> Horario</abbr>: Lunes - Viernes: 8:00 AM a 6:00 PM
+              </p>
+            </div>
+            <div class="col-xs-12 col-sm-11 col-md-10 no-padding google-maps-container">
+              <!-- Embedded Google Map -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13340.169789702604!2d-75.57956470811065!3d6.256326108851628!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa82ebb8889ab4dae!2sFundaci%C3%B3n+Universitaria+Luis+Amig%C3%B3!5e0!3m2!1ses!2sco!4v1447339140317" frameborder="0" style="border:0;width: 100%;" allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+          <!-- formulario de contacto -->
+          <div class="col-xs-12 col-sm-6">
+            <div class="wid-100">
+              <form>
+                <h2>Dejanos tu mensaje</h2>
+                <input type="text" id="inputName" class="form-control input-opacity-05 transition-all margin-t-b-10" placeholder="Ingresa tu nombre"></input>
+                <input type="email" id="inputEmail" class="form-control input-opacity-05 transition-all margin-t-b-10" placeholder="Ingresa tu correo electronico"></input>
+                <textarea type="text" rows="5" id="inputMessage" class="form-control input-opacity-05 transition-all margin-t-b-10" placeholder="Escribe aqui tu mensaje" required></textarea>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Enviar Mensaje</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+  <footer id="footer">
+    <div class="wid-100 center-items margin-t-b-20">
+      <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8">
+        <h4 class="fc-W text-center" >
+          Siguenos en nuestras redes sociales
+          <span class="label label-info" aria-hidden="true">
+            <span class="my-icon my-icon-thumb-up" aria-hidden="true"></span>
+          </span>
+        </h4>
+      </div>
+    </div>
+    <div class="wid-100 center-items">
+      <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8">
+          <div class="col-xs-12 col-sm-3 center-items margin-t-b-20">
+            <div class="icon-social">
+                <span class="my-icon my-icon-facebook" aria-hidden="true">
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-3 center-items margin-t-b-20">
+            <div class="icon-social">
+               <span class="my-icon my-icon-twitter" aria-hidden="true">
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-3 center-items margin-t-b-20">
+            <div class="icon-social">
+                <span class="my-icon my-icon-youtube-play" aria-hidden="true">
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-3 center-items margin-t-b-20">
+            <div class="icon-social">
+                <span class="my-icon my-icon-instagram" aria-hidden="true">
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="wid-100 margin-t-50">
+      <div class="wid-100 center-items">
+        <p class="fc-W fs-12 text-center">Todos los derechos reservados Semillero de Desarrollo Web Funlam 2015</p>
+      </div>
+      <div class="wid-100 center-items">
+        <p class="fc-W fs-10">Made With <span class="my-icon my-icon-heart hearth-beat"></span> By SeDeWeb</p>
+      </div>
+    </div>
   </footer>
+
 </body>
 <script type="text/javascript">
 
