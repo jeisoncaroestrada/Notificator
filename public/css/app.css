@@ -10503,6 +10503,40 @@ button.close {
 
 /*# sourceMappingURL=materialdesignicons.css.map */
 
+/*/*****************************************************************************
+// @Font-Face
+// *****************************************************************************/
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../fonts/openSans/open-sans.bold-webfont.eot');
+    src: url('../fonts/openSans/open-sans.bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/openSans/open-sans.bold-webfont.woff2') format('woff2'),
+         url('../fonts/openSans/open-sans.bold-webfont.woff') format('woff'),
+         url('../fonts/openSans/open-sans.bold-webfont.ttf') format('truetype'),
+         url('../fonts/openSans/open-sans.bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../fonts/openSans/open-sans.light-webfont.eot');
+    src: url('../fonts/openSans/open-sans.light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/openSans/open-sans.light-webfont.woff2') format('woff2'),
+         url('../fonts/openSans/open-sans.light-webfont.woff') format('woff'),
+         url('../fonts/openSans/open-sans.light-webfont.ttf') format('truetype'),
+         url('../fonts/openSans/open-sans.light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
  @media (max-width: 480px) {
 
   .fs-xs-20{
@@ -10529,6 +10563,19 @@ button.close {
   align-items: center;
   -webkit-justify-content: center;
   justify-content: center;
+}
+
+.upercase{
+  text-transform: uppercase;
+}
+
+.extra-bold{
+  font-family: 'open_sansbold';
+}
+
+.title-bold{
+  text-transform: uppercase;
+  font-family: 'open_sansbold';
 }
 
 .overflow-hidden{
@@ -10601,6 +10648,10 @@ button.close {
 /*/*****************************************************************************
 // Elementos principales
 // *****************************************************************************/
+html,body{
+  font-family: 'open_sanslight';
+}
+
 .overlay-header{
   position: absolute;
   top: 0;
@@ -10681,7 +10732,6 @@ button.close {
   text-align: center;
   line-height: 90px;
   font-size: 40px;
-  border: 10px solid;
   box-shadow: 0 0 0 5px #fff;
   color: #403F3B;
   cursor: pointer;
@@ -10698,13 +10748,20 @@ button.close {
 
   border: 7px solid #ADACA9;
   box-shadow: 0 0 0 7px rgb(205, 204, 201);
-
-
 }
 
 .my-icon-heart{
   color: #e74c3c;
   font-size: 14px!important;
+}
+
+.icon-down{
+  font-size: 20px!important;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #fff;
+  cursor: pointer;
 }
 
 
@@ -10854,7 +10911,7 @@ button.close {
 // Animaciones
 // *****************************************************************************/
 
-@-webkit-keyframes hearthbeat {
+@-webkit-keyframes heartbeat {
   from {
     -webkit-transform: scale(1);
   }
@@ -10875,7 +10932,8 @@ button.close {
     -webkit-transform: scale(1.4);
   }
 }
-@-moz-keyframes hearthbeat {
+
+@-moz-keyframes heartbeat {
   from {
     -moz-transform: scale(1);
   }
@@ -10896,7 +10954,8 @@ button.close {
     -moz-transform: scale(1.4);
   }
 }
-@-o-keyframes hearthbeat {
+
+@-o-keyframes heartbeat {
   from {
     -o-transform: scale(1);
   }
@@ -10917,7 +10976,8 @@ button.close {
     -o-transform: scale(1.4);
   }
 }
-@keyframes hearthbeat {
+
+@keyframes heartbeat {
   from {
     transform: scale(1);
   }
@@ -10939,10 +10999,97 @@ button.close {
   }
 }
 
-.hearth-beat {
-  -webkit-animation: hearthbeat 1s infinite linear;
-  -moz-animation: hearthbeat 1s infinite linear;
-  animation: hearthbeat 1s infinite linear;
+.heart-beat {
+  -webkit-animation: heartbeat 1s infinite linear;
+  -moz-animation: heartbeat 1s infinite linear;
+  animation: heartbeat 1s infinite linear;
+}
+
+@-webkit-keyframes bounce-down {
+  0% {
+    -webkit-transform: translate(0px, calc(0% + 0px)); }
+
+  10% {
+    -webkit-transform: translate(0px, calc(0% + 30px)); }
+
+  20% {
+    -webkit-transform: translate(0px, calc(0% + 10px)); }
+
+  30% {
+    -webkit-transform: translate(0px, calc(0% + 20px)); }
+
+  40% {
+    -webkit-transform: translate(0px, calc(0% + 0px)); }
+
+  100% {
+    -webkit-transform: translate(0px, calc(0% + 0px)); } 
+}
+
+@-moz-keyframes bounce-down {
+  0% {
+    -moz-transform: translate(0px, calc(0% + 0px)); }
+
+  10% {
+    -moz-transform: translate(0px, calc(0% + 30px)); }
+
+  20% {
+    -moz-transform: translate(0px, calc(0% + 10px)); }
+
+  30% {
+    -moz-transform: translate(0px, calc(0% + 20px)); }
+
+  40% {
+    -moz-transform: translate(0px, calc(0% + 0px)); }
+
+  100% {
+    -moz-transform: translate(0px, calc(0% + 0px)); } 
+}
+
+@-o-keyframes bounce-down {
+  0% {
+    -o-transform: translate(0px, calc(0% + 0px)); }
+
+  10% {
+    -o-transform: translate(0px, calc(0% + 30px)); }
+
+  20% {
+    -o-transform: translate(0px, calc(0% + 10px)); }
+
+  30% {
+    -o-transform: translate(0px, calc(0% + 20px)); }
+
+  40% {
+    -o-transform: translate(0px, calc(0% + 0px)); }
+
+  100% {
+    -o-transform: translate(0px, calc(0% + 0px)); }
+}
+
+@keyframes bounce-down {
+  0% {
+    transform: translate(0px, calc(0% + 0px)); }
+
+  10% {
+    transform: translate(0px, calc(0% + 30px)); }
+
+  20% {
+    transform: translate(0px, calc(0% + 10px)); }
+
+  30% {
+    transform: translate(0px, calc(0% + 20px)); }
+
+  40% {
+    transform: translate(0px, calc(0% + 0px)); }
+
+  100% {
+    transform: translate(0px, calc(0% + 0px)); } 
+}
+
+
+.bounce-down {
+  -webkit-animation: bounce-down 1s infinite linear;
+  -moz-animation: bounce-down 1s infinite linear;
+  animation: bounce-down 1s infinite linear;
 }
 
 .theme1 .bg-1 {
